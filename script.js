@@ -1,3 +1,5 @@
+import { API_KEY } from './secured/api.js'
+
 (() => {
   // 시 분 반환 함수
   let getTime = () => {
@@ -15,7 +17,44 @@
     setTimeout(showTime, 1000);
   }
   
+  // 위치 정보 받기
+  function askForCoords(){
+    navigator.geolocation.getCurrentPosition(succes, error);
+  }
+
+  function succes(position){
+    const latitude =  position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const coordsObj = {
+      latitude,
+      longitude
+    };
+    console.log(coordsObj)
+    getWeather(latitude, longitude);
+  }
+
+  function error(position){
+    console.log('Cant get your position.');
+  }
+
+
+  let getWeather = (lat, lon) => {
+    let weatherIcon = document.querySelector('.weather-icon');
+    let weatherTemp = document.querySelector('.weather-temp');
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`)
+    .then(res => res.json())
+    .then(data => {
+        const temp = data.main.temp;
+        const weathers = data.weather[0];
+
+        weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${weathers.icon}@2x.png">`
+        weatherTemp.innerHTML = `${Math.floor(temp)}&#176;C`;
+        console.log(data);
+    })
+  }
+
   
   showTime();
+  askForCoords();
 
 })();
