@@ -54,6 +54,29 @@ li {
 }
 
 .time {
-  font-size: 120px;
+  display: inline-block;
+  font-size: 150px;
+  margin-right: 10px;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.weather {
+  display: inline-block;
+  height: 150px;
+}
+
+.weather-icon-temp {
+  display: flex;
+  height: 70px;
+}
+
+.weather-icon img {
+  display: block;
+  width: 70px;
+}
+
+.weather-temp {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 40px;
+  line-height: 70px;
 }

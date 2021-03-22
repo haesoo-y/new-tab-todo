@@ -35,6 +35,7 @@ import { API_KEY } from './secured/api.js'
 
   function error(position){
     console.log('Cant get your position.');
+    getWeather(37.5683, 126.9778)
   }
 
 
@@ -48,7 +49,7 @@ import { API_KEY } from './secured/api.js'
         const weathers = data.weather[0];
 
         weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${weathers.icon}@2x.png">`
-        weatherTemp.innerHTML = `${Math.floor(temp)}&#176;C`;
+        weatherTemp.innerHTML = `${Math.floor(temp)}&#176;`;
         console.log(data);
     })
   }
