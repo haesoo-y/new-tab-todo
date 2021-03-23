@@ -28,7 +28,6 @@ function succes(position){
     latitude,
     longitude
   };
-  console.log(coordsObj)
   getWeather(latitude, longitude);
 }
 
@@ -49,7 +48,6 @@ let getWeather = (lat, lon) => {
 
       weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${weathers.icon}@2x.png">`
       weatherTemp.innerHTML = `${Math.floor(temp)}&#176;`;
-      console.log(data);
   })
 }
 
