@@ -1,4 +1,4 @@
-import { API_KEY } from './secured/api.js'
+import { API_KEY } from './src/api.js'
 
 // 시 분 반환 함수
 const getTime = () => {
