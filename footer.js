@@ -1,7 +1,10 @@
+const popUp = document.querySelector(".pop-up");
+
 const showPopUp = () => {
-  console.log('questionButton clicked...')
+  popUp.style.visibility = "visible";
 }
 
 const removePopUp = () => {
-  console.log('remove clicked...')
+  popUp.style.visibility = "hidden";
 }
+popUp.addEventListener('click', removePopUp);

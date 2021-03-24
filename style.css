@@ -325,7 +325,7 @@ footer button {
 
 /* 팝업창 */
 .pop-up {
-  /* display: none; */
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -346,8 +346,7 @@ footer button {
 
 .pop-up-content {
   width: 50vw;
-  /* height: 50vh; */
-  padding: 0 10px;
+  padding: 0 10px 30px 0;
   position: absolute;
   top: 50%;
   left: 50%;
