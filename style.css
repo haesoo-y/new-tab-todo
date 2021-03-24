@@ -229,3 +229,96 @@ li {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
+
+/* 푸터 */
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+footer button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.question-button {
+  width: 33px;
+  height: 33px;
+  opacity: 0.75;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.question-button:hover {
+  opacity: 1;
+}
+
+.question-button:hover .question-text {
+  opacity: 0.7;
+  visibility: visible;
+  width: auto;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 3px 10px;
+  background: rgb(0,0,0);
+  border-radius: 5px;
+}
+
+.coffee-button:hover {
+  opacity: 1;
+}
+
+.coffee-button:hover .coffee-text {
+  opacity: 0.7;
+  visibility: visible;
+  width: auto;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 3px 10px;
+  background: rgb(0,0,0);
+  border-radius: 5px;
+}
+
+.question-button button {
+  padding-bottom: 3px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+.question-text {
+  position: absolute;
+  top: -50%;
+  left: 10px;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.coffee-button {
+  opacity: 0.7;
+  display: inline-block;
+  width: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.coffee-text {
+  cursor: default;
+  position: absolute;
+  top: -50%;
+  left: 50px;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.coffee-button img {
+  display: block;
+  cursor: pointer;
+  width: 35px;
+  transform: translateY(5px);
+}

@@ -38,17 +38,9 @@
           <div class="clothes-temp">
             <img class="tri-button" src="./icon/tri-button.png" alt="cloth-hover-button">
             <div class="clothes-all">
-              <div class="clothes-top">
-                <!-- <img src="./icon/knit.png" alt="">
-                <img src="./icon/shirt.png" alt="">
-                <img src="./icon/jacket.png" alt=""> -->
-              </div>
-              <div class="clothes-middle">
-                <!-- <img src="./icon/pants.png" alt=""> -->
-              </div>
-              <div class="clothes-bottom">
-                <!-- <img src="./icon/socks.png" alt=""> -->
-              </div>
+              <div class="clothes-top"></div>
+              <div class="clothes-middle"></div>
+              <div class="clothes-bottom"></div>
             </div>
           </div>
         </div>
@@ -61,9 +53,21 @@
       <ul class="todo-list"></ul>
     </section>
   </div>
-  
+  <footer>
+    <span class="question-button">
+      <button class="question-button" onclick="questionButton()">?</button>
+      <div class="question-text">도움말을 보시려면 클릭하세요 &#128558</div>
+    </span>
+    <a href="" class="coffee-button">
+      <button onclick="coffeeButton()">
+        <img src="./icon/coffee.png" alt="coffee-icon">
+      </button>
+      <div class="coffee-text">개발자에게 커피를 선물하세요 &#128523</div>
+    </a>
+  </footer>
   <script type="module" src="./script.js"></script>
   <script src="./todo.js"></script>
   <script src="./search.js"></script>
+  <script src="./footer.js"></script>
 </body>
 </html>
