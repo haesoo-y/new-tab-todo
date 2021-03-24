@@ -1,6 +1,6 @@
 // import { API_KEY } from './secured/api.js'
 const API_KEY = process.env.API_KEY;
-
+console.log(process.env.API_KEY);
 // 시 분 반환 함수
 const getTime = () => {
   let date = new Date()
