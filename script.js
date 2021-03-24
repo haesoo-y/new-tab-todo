@@ -1,6 +1,5 @@
-// import { API_KEY } from './secured/api.js'
-const API_KEY = process.env.API_KEY;
-console.log(process.env.API_KEY);
+import { API_KEY } from './secured/api.js'
+
 // 시 분 반환 함수
 const getTime = () => {
   let date = new Date()
@@ -62,7 +61,6 @@ const showLocation = (name) => {
 }
 
 const showClothes = (tmp) => {
-  console.log(tmp)
   const clothesTop = document.querySelector(".clothes-top");
   const clothesMiddle = document.querySelector(".clothes-middle");
   const clothesBottom = document.querySelector(".clothes-bottom");
