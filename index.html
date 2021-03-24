@@ -55,15 +55,34 @@
   </div>
   <footer>
     <span class="question-button">
-      <button class="question-button" onclick="questionButton()">?</button>
+      <button class="question-button" onclick="showPopUp()">?</button>
       <div class="question-text">도움말을 보시려면 클릭하세요 &#128558</div>
     </span>
-    <a href="" class="coffee-button">
-      <button onclick="coffeeButton()">
+    <a href="https://donaricano.com/mypage/1673102942_uuPtwc" target="_blank" class="coffee-button">
+      <button>
         <img src="./icon/coffee.png" alt="coffee-icon">
       </button>
       <div class="coffee-text">개발자에게 커피를 선물하세요 &#128523</div>
     </a>
+    <div class="pop-up">
+      <div class="pop-up-content">
+        <button onclick="removePopUp()">x</button>
+        <h1>New Tab To-do를 이용해주셔서 감사합니다.</h1>
+        <p>
+          새 탭 설정 방법 보기
+          <a href="https://haesoo9410.tistory.com/191" target="_blank">&#128064</a>
+        </p>
+        <p>
+          개발자 깃허브 바로가기
+          <a href="https://github.com/haesoo9410" target="_blank">&#128187</a>
+        </p>
+        <p>
+          사이트가 마음에 드셨다면 깃허브에서 &#127775 버튼을 눌러주세요.<br/>star는 개발자에게 힘이 됩니다 &#128170
+        </p>
+        <p class="location-info">location : Ansan</p>
+        <p>version : 1.0.1</p>
+      </div>
+    </div>
   </footer>
   <script type="module" src="./script.js"></script>
   <script src="./todo.js"></script>

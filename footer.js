@@ -1,7 +1,7 @@
-const questionButton = () => {
+const showPopUp = () => {
   console.log('questionButton clicked...')
 }
 
-const coffeeButton = () => {
-  console.log('coffeeButton clicked...')
+const removePopUp = () => {
+  console.log('remove clicked...')
 }

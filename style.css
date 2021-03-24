@@ -322,3 +322,55 @@ footer button {
   width: 35px;
   transform: translateY(5px);
 }
+
+/* 팝업창 */
+.pop-up {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.pop-up button {
+  background: none;
+  display: block;
+  margin: 0 0 40px auto;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.pop-up-content {
+  width: 50vw;
+  /* height: 50vh; */
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(150,150,150,0.5);
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+.pop-up-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.pop-up-content p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.pop-up-content p:nth-child(5) {
+  margin: 40px 0;
+}
+
+
+
