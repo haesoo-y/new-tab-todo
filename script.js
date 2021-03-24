@@ -45,12 +45,19 @@ const getWeather = (lat, lon) => {
   .then(data => {
       let temp = data.main.temp;
       let weathers = data.weather[0];
+      let location = data.name
 
       weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${weathers.icon}@2x.png">`
       weatherTemp.innerHTML = `${Math.floor(temp)}&#176;`;
 
       showClothes(temp);
+      showLocation(location);
   })
+}
+
+const showLocation = (name) => {
+  const locationInfo = document.querySelector(".location-info");
+  locationInfo.innerHTML = `Location : ${name}`;
 }
 
 const showClothes = (tmp) => {
