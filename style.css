@@ -138,7 +138,7 @@ li {
 
 .clothes-temp:hover .clothes-all {
   visibility: visible;
-  width: 200px;
+  width: 155px;
   height: 220px;
   background-color: rgba(0, 0, 0, 0.5);
   transform: translate(10px, -20px);
