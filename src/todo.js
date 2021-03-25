@@ -1,9 +1,11 @@
+// 로컬 저장소 키값 설정
 const localTODO = "localtodo";
 
 const todoForm = document.querySelector('.todo-form');
 const todoInput = document.querySelector('.todo-form input');
 const todoList = document.querySelector('.todo-list');
 
+// 로컬에 저장할 객체 리스트 생성
 let todos = [];
 
 // 제출 시 리스트 추가

@@ -8,6 +8,7 @@ const getTime = () => {
 
   return (hour + " : " + min);
 };
+
 // 시 분 출력 함수
 const showTime = () => {
   let time = document.querySelector('.time');
@@ -21,6 +22,7 @@ const askForCoords = () => {
   navigator.geolocation.getCurrentPosition(succes, error);
 }
 
+// 위치 정보 권한 승낙 시 위도 경도 객체 생성
 const succes = (position) => {
   const latitude =  position.coords.latitude;
   const longitude = position.coords.longitude;
@@ -31,12 +33,13 @@ const succes = (position) => {
   getWeather(latitude, longitude);
 }
 
+// 위치 정보 권한 거부 시 위치를 서울로 지정
 const error = (position) => {
   console.log('Cant get your position.');
   getWeather(37.5683, 126.9778)
 }
 
-
+// 위도 경도 정보로 날씨 정보를 불러옴
 const getWeather = (lat, lon) => {
   const weatherIcon = document.querySelector('.weather-icon');
   const weatherTemp = document.querySelector('.weather-temp');
@@ -55,11 +58,13 @@ const getWeather = (lat, lon) => {
   })
 }
 
+// 날씨 정보를 받은 위치명을 팝업창에 삽입
 const showLocation = (name) => {
   const locationInfo = document.querySelector(".location-info");
   locationInfo.innerHTML = `Location : ${name}`;
 }
 
+// 날씨 정보에서 받은 기온으로 적합한 옷 출력
 const showClothes = (tmp) => {
   const clothesTop = document.querySelector(".clothes-top");
   const clothesMiddle = document.querySelector(".clothes-middle");
