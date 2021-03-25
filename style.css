@@ -28,6 +28,12 @@ textarea {
   color: rgba(255, 255, 255, 0.85);
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 input::placeholder {
   color: rgba(255, 255, 255, 0.85);
 }
@@ -73,6 +79,21 @@ li {
   border-style: none;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 28px;
+}
+
+.search-section form {
+  position: relative;
+}
+
+.search-button {
+  opacity: 80%;
+  position: absolute;
+  top: 12%;
+  right: 1px;
+}
+
+.search-button img {
+  width: 28px;
 }
 
 /* 시간과 날씨 */
@@ -216,14 +237,11 @@ li {
 }
 
 .todo-section button {
-  border-style: none;
-  background: none;
   margin-left: 20px;
   font-size: 28px;
   text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
   opacity: 0.1;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
 }
 
 /* 푸터 */
@@ -232,11 +250,6 @@ footer {
   position: fixed;
   bottom: 10px;
   left: 10px;
-}
-
-footer button {
-  background : none;
-  border: none;
 }
 
 .question-button {
@@ -277,7 +290,6 @@ footer button {
 
 .question-button button {
   padding-bottom: 3px;
-  cursor: pointer;
   font-family: sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -328,12 +340,10 @@ footer button {
 }
 
 .pop-up button {
-  background: none;
   display: block;
   margin: 0 0 40px auto;
   font-size: 20px;
   font-family: sans-serif;
-  cursor: pointer;
 }
 
 .pop-up-content {
