@@ -385,7 +385,8 @@ footer button {
     /* 컨텐츠 */
   .contents-wrapper {
     position: relative;
-    top:30%;
+    top:50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
