@@ -239,7 +239,7 @@ footer {
 }
 
 footer button {
-  background-color: rgba(0, 0, 0, 0.1);
+  background : none;
   border: none;
 }
 
