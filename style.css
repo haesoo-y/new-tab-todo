@@ -363,7 +363,8 @@ footer {
   margin-bottom: 40px;
 }
 
-.pop-up-content p {
+.pop-up-content a {
+  display: block;
   margin-bottom: 20px;
   font-size: 20px;
 }
