@@ -5,14 +5,19 @@
 - 다양한 기능을 넣은 새 탭 페이지 개발 ( to-do리스트, 랜덤 배경사진,시간, 검색엔진, 날씨, 기온별 의상추천)
 
 ### 미리보기
+- [바로가기](https://new-tab-todo.netlify.app/)
 
 - Desktop size
 
-  ![500px_new-tab](https://user-images.githubusercontent.com/71266602/112497382-e7640700-8dc8-11eb-9134-ac4acfab370a.gif)
+![demo-desktop](https://user-images.githubusercontent.com/71266602/139566498-eef757aa-8737-4df4-b534-5ecf99e22f97.gif)
+
+  
 - Mobile size
 
-  ![500px_new-tab-mobile](https://user-images.githubusercontent.com/71266602/112497417-ef23ab80-8dc8-11eb-9d2f-4801de01c6d6.gif)
-- [바로가기](https://new-tab-todo.netlify.app/)
+![demo-mobile](https://user-images.githubusercontent.com/71266602/139566501-649c2d72-686a-4afc-aa87-28ef352f2443.gif)
+
+  
+
 
 ### 상세내용
 
