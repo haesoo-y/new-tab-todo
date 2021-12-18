@@ -10,9 +10,6 @@ body {
   height: 100vh;
   font-family: 'Gamja Flower', cursive;
   color: rgba(255, 255, 255, 0.85);
-  background-image: url('https://source.unsplash.com/1600x900/?nature,water');
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
 }
 
@@ -55,11 +52,38 @@ li {
   padding: 0;
   margin: 0;
 }
+/* 배경 */
+.background {
+  position: fixed;
+  background-color: rgb(190, 190, 190);
+  top: 0;
+  left: 0;
+}
+
+.background img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 1s linear;
+}
+
+.background img.loaded {
+  opacity: 1;
+}
+
+.small-img {
+  filter: blur(100px);
+}
 
 /* 컨텐츠 */
 .contents-wrapper {
   position: relative;
-  top:25%;
+  top: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +127,7 @@ li {
   margin: 20px 10px 0 0;
   height: 220px;
   font-size: 190px;
-  text-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
 }
 
 .weather {
@@ -120,12 +144,12 @@ li {
   display: block;
   margin-right: 5px;
   opacity: 90%;
-  filter: brightness(500%) drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+  filter: brightness(500%) drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   width: 70px;
 }
 
 .weather-temp {
-  text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   font-size: 40px;
   line-height: 70px;
 }
@@ -136,7 +160,7 @@ li {
   padding: 0 2px;
   justify-content: space-around;
   align-items: center;
-  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
 }
 
 .clothes-icon img {
@@ -182,7 +206,7 @@ li {
 
 /* to-do */
 .todo-section {
-  width: 500px;;
+  width: 500px;
 }
 .todo-section input {
   width: 450px;
@@ -190,12 +214,12 @@ li {
   border-style: none;
   border-bottom: solid 2px rgba(255, 255, 255, 0.7);
   background: none;
-  text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   font-size: 30px;
 }
 
 .todo-section input::placeholder {
-  text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   text-align: center;
 }
 
@@ -203,7 +227,7 @@ li {
   height: 300px;
   overflow: auto;
   font-size: 28px;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
 .todo-section ul::-webkit-scrollbar {
@@ -211,13 +235,13 @@ li {
 }
 
 .todo-section ul::-webkit-scrollbar-track {
-  background-color: rgba(150,150,150,0.1);
+  background-color: rgba(150, 150, 150, 0.1);
   border-radius: 5px;
   transition: background-color 1s ease-in-out;
 }
 
 .todo-section ul::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   background-clip: padding-box;
   border: 1px solid transparent;
@@ -239,7 +263,7 @@ li {
 .todo-section button {
   margin-left: 20px;
   font-size: 28px;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
   opacity: 0.1;
   transition: all 0.5s ease-in-out;
 }
@@ -270,7 +294,7 @@ footer {
   width: auto;
   font-size: 18px;
   padding: 3px 10px;
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
   border-radius: 5px;
 }
 
@@ -284,7 +308,7 @@ footer {
   width: auto;
   font-size: 18px;
   padding: 3px 10px;
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
   border-radius: 5px;
 }
 
@@ -336,7 +360,7 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .pop-up button {
@@ -353,7 +377,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(150,150,150,0.5);
+  background-color: rgba(150, 150, 150, 0.5);
   text-align: center;
 }
 
@@ -375,16 +399,16 @@ footer {
 
 /* Responsive CSS */
 
-@media screen and (max-width : 650px) {
+@media screen and (max-width: 650px) {
   /* 시간 제거 */
   .time {
     display: none;
   }
 
-    /* 컨텐츠 */
+  /* 컨텐츠 */
   .contents-wrapper {
     position: relative;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: row;
@@ -445,7 +469,7 @@ footer {
   .clothes-all div:nth-child(n) {
     margin-top: 15px;
   }
-  
+
   .clothes-all img {
     width: 40px;
     height: 40px;
@@ -460,7 +484,7 @@ footer {
   .question-button:hover .question-text {
     visibility: hidden;
   }
-  
+
   .coffee-button:hover .coffee-text {
     visibility: hidden;
   }
@@ -491,6 +515,3 @@ footer {
     font-size: 15px;
   }
 }
-
-
-
