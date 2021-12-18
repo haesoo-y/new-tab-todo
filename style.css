@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Gamja Flower';
   src: url('./font/GamjaFlower-Regular.woff2') format('woff2'), url('./font/GamjaFlower-Regular.woff') format('woff');
-  font-display: block;
+  font-display: swap;
 }
 
 /* Reset CSS */
